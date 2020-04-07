@@ -1,0 +1,42 @@
+// Заголовок в славянском стиле
+@font-face {
+    font-family: Panton-SemiBold;
+    src: url("fonts/Panton-SemiBold.eot");
+    src: url("fonts/Panton-SemiBold.woff2") format('woff2'),
+    url("fonts/Panton-SemiBold.woff") format('woff'),
+    url('fonts/Panton-SemiBold.ttf') format('truetype');
+  }
+
+
+  @font-face {
+    font-family: Panton-Bold;
+    src: url("fonts/Panton-Bold.eot");
+    src: url("fonts/Panton-Bold.woff2") format('woff2'),
+    url("fonts/Panton-Bold.woff") format('woff'),
+    url('fonts/Panton-Bold.ttf') format('truetype');
+  }
+
+
+  @font-face {
+    font-family: Panton-ExtraBold;
+    src: url("fonts/Panton-ExtraBold.eot");
+    src: url("fonts/Panton-ExtraBold.woff2") format('woff2'),
+    url("fonts/Panton-ExtraBold.woff") format('woff'),
+    url('fonts/Panton-ExtraBold.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Panton-Regular;
+    src: url("fonts/Panton-Regular.eot");
+    src: url("fonts/Panton-Regular.woff2") format('woff2'),
+    url("fonts/Panton-Regular.woff") format('woff'),
+    url('fonts/Panton-Regular.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: Panton-ExtraBlack;
+    src: url("fonts/Panton-ExtraBlack.eot");
+    src: url("fonts/Panton-ExtraBlack.woff2") format('woff2'),
+    url("fonts/Panton-ExtraBlack.woff") format('woff'),
+    url('fonts/Panton-ExtraBlack.ttf') format('truetype');
+  }
