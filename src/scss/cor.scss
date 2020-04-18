@@ -1,0 +1,143 @@
+
+
+h3.section-title{
+    //font-family: Panton-ExtraBold sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 40px 0;
+
+
+}
+
+a.all_catalog{
+    font-size: 12px;
+    letter-spacing: .2rem;
+    font-weight: bold;
+    color: $blue;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 62px;
+
+
+}
+
+p.related-item_sale{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .1rem;
+    color: $white;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    background-color: $green;
+    border-radius: 3px;
+    margin-bottom: 4px;
+    z-index: 10;
+}
+
+p.related-item_best{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .1rem;
+    color: $white;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    background: $blueButton;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+p.product-name_title,
+p.product-name_brand{
+    font-family: Panton-SemiBold sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    color: $black;
+    margin-top: 8px;
+}
+
+
+p.related-main_title{
+    font-size: 33px;
+    font-weight: bold;
+    color: $white;
+    margin: 15px 0;
+}
+
+p.related-main_desc{
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 30px;
+    color: $blueText;
+    max-width: 115px;
+}
+
+p.related-main_sale{
+    font-size: 95px;
+    color: rgba(255,255,255, 0.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+
+}
+
+p.related-main_price{
+    color: $white;
+    font-size: 30px;
+    font-weight: 400;
+    
+    
+}
+
+p.product-price_main{
+    font-size: 24px;
+    font-weight: bold;
+    color: $black;
+
+    span.product-price_old{
+        font-size: 16px;
+        text-decoration: line-through;
+        font-weight: 400;
+        color: $gray;
+        margin-left: 10px;
+    }
+
+}
+
+
+
+p.product-price_discont{
+    font-size: 14px;
+    font-weight: 400;
+    color: $green;
+
+}
+
+
+
+a.add_to_cart_button{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .1rem;
+    color: $white;
+    padding: 17px 65px;
+    background: $blueButton;
+
+    border-radius: 3px;
+    text-decoration: none;
+    display: block;
+    max-width: 225px;
+    margin: 0 auto;
+    //transition-duration: 500ms;
+    //transition-property: background-color;
+
+
+    &:hover{
+        background: $blue;
+
+    }
+    
+
+}

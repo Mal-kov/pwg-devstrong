@@ -5,6 +5,9 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const webpack = require('webpack');
+
 
 module.exports = {
     // entry: ['@babel/polyfill', './src/index.js'],
@@ -35,7 +38,19 @@ module.exports = {
         }),
         new MiniCssExtractPlugin({
             filename: 'css/style.css'
-        })
+        }),
+        new CopyPlugin([
+            { 
+                from: './src/images', 
+                to: 'images' 
+            },
+            
+        ]),
+        new webpack.ProvidePlugin({
+            $: 'jquery',
+            jQuery: 'jquery',
+            'window.jQuery': 'jquery'
+        }),
 
     ],
     resolve: {
@@ -44,12 +59,12 @@ module.exports = {
     module: {
         rules: [
             { test: /\.js$/, exclude: /node_modules/, loader: "babel-loader" },
-            // {
-            //     test: /\.css$/i,
-            //     use: [
-            //         MiniCssExtractPlugin.loader, 'css-loader'
-            //     ]
-            // },
+            {
+                test: /\.css$/i,
+                use: [
+                    MiniCssExtractPlugin.loader, 'css-loader'
+                ]
+            },
             {
                 test: /\.scss$/,
                 use: [
@@ -61,12 +76,15 @@ module.exports = {
                 use: [
                 {
                     loader: 'file-loader',
-                    options: {name: 'img/[name].[ext]'}  
+                    options: {
+                        name: 'images/[name].[ext]',
+                        outputPath: 'images'
+                    }  
                 }
                 ]
             },
             {
-                test: /\.(ttf|eot|woff|woff2)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                test: /\.(ttf|eot|woff|woff2|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 //include: path.resolve(__dirname, 'src/scss/fonts/'),
                 use: [{
                     loader: 'file-loader'

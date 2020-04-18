@@ -1,5 +1,12 @@
 @charset "UTF-8";
 @import "~bootstrap/scss/bootstrap";
+$owl-image-path: "~owl.carousel/src/img/";
+@import '~owl.carousel/src/scss/owl.carousel';
+@import '~owl.carousel/src/scss/owl.theme.default';
+// $fa-font-path: '~@fortawesome/webfonts'; 
+// @import '~@fortawesome/scss/fontawesome';
+// @import '~@fortawesome/scss/solid';
+
 
 @import "./reset.scss";
 @import "./variables.scss";
