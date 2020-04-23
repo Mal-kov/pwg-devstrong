@@ -1,0 +1,78 @@
+.action{
+    padding: 50px 0;
+
+    .actionBlock{
+        height: 280px;
+        position: relative;
+        background: radial-gradient(circle, rgba(5,139,196,1) 0%, rgba(62,196,243,1) 0%, rgba(5,139,196,1) 100%);
+        display: block;
+        box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+
+
+        .actonBlock-text{
+            position: absolute;
+            left: 30px;
+            top: 30px;
+            p.actionBlock_title, .actionBlock_about{
+                font-size: 48px;
+                font-weight: bold;
+                color: $white;
+
+
+                span{
+                    font-size: 22px;
+                    color: $blueSale;
+
+                }
+            }
+
+
+        }
+        .actonBlock-button{
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+
+            a.actonBlock_btn{
+                display: inline-block;
+                position: relative;
+                color: $white;
+                background: $black;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                font-size: 25px;
+                transition-property: color;
+                transition-duration: 0.5ms;
+
+                span{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                &:hover{
+                    color: $black;
+                    background: $white;
+                }
+            }
+        }
+        .actionBlock-sale{
+            p.actionBlock-sale_text{
+                font-size: 95px;
+                font-weight: bold;
+                color: rgba(255,255,255, 0.5);
+                position: absolute;
+                bottom: 30px;
+                left: 140px;
+            }
+        }
+        .actionBlock-image{
+            position: absolute;
+            right: 20px;
+            bottom: -10px;
+            display: block;
+        }
+    }
+}

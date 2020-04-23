@@ -1,0 +1,95 @@
+.footer{
+    padding: 50px 0;
+    background-color: $footerBg;
+
+
+    .footer-brand{
+        color: $footerText;
+
+        p.footer-logotype{
+            font-size: 50px;
+            margin-bottom: 20px;
+            
+        }
+        p{
+            margin: 10px;
+        }
+
+        a{
+            text-decoration: underline;
+            color: $blue;
+            font-size: 18px;
+            display: block;
+            padding-left: 10px;
+            margin: 15px 0;
+
+            &:first-child{
+                margin-top: 30px;
+            }
+
+        }
+
+    }
+
+    .footer-menu_block{
+        display: flex;
+        justify-content: space-between;
+        
+
+        .footer-menu{
+            margin-bottom: 30px;
+
+            h4{
+                font-size: 14px;
+                font-weight: bold;
+                color: $white;
+                padding-bottom: 20px;
+                text-transform: uppercase;
+                letter-spacing: 2.5px;
+            }
+            li{
+                margin-bottom: 20px;
+
+                a, p{
+                    font-size: 14px;
+                    color: $footerText;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+                a{
+
+                    &:hover{
+                        color: $white;
+                    }
+                }
+                a.footer-menu_email{
+                    text-transform: none;
+                    text-decoration: underline;
+                    color: $blue;
+                }
+                p.footer-menu_address{
+                    text-transform: none;
+                }
+            }
+        }
+    }
+    .footer-copyright{
+        justify-content: space-between;
+        padding-top: 50px;
+        border-top: 1px solid $gray;
+        color: $gray;
+
+        .footer-copyright_social{
+
+            a{
+                font-size: 25px;
+                color: $gray;
+                margin-left: 30px;
+
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}

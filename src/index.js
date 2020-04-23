@@ -33,4 +33,14 @@ $(document).ready(function(){
             }
         }
     });
+
+    $('.owl-carouselMainSlider').owlCarousel({
+        loop:true,
+        margin:10,
+        nav: false,
+        dots: true,
+        items:1,
+        // responsiveClass:true,
+        
+    });
   });

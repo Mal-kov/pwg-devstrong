@@ -1,0 +1,260 @@
+.products{
+    padding: 50px 0;
+
+
+    .products-list{
+        width: 265px;
+
+        .list-widget{
+            width: 100%;
+        }
+
+        .list-widget_item{
+            position: relative;
+            font-size: 16px;           
+            width: 260px;
+            height: 45px;
+            margin-bottom: 5px;
+            background-color: $fon;
+
+            span.list-widget_cercle{
+                border: 2px solid $black;
+                border-radius: 50%;
+                font-size: 8px;
+                font-weight: 900;
+                position: absolute;
+                left: 20px;
+                top: 42%;            
+            }
+
+            a.list-widget_link{
+                display: block;
+                width: 100%;
+                padding: 16px 0 16px 60px;
+                background-color: $fon;
+                color: $footerBg;
+                text-decoration: none;
+            }
+
+            span.list-widget_arrow{
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+                color: $footerText;
+            }
+
+            &:hover{
+                font-weight: bold;
+
+                span.list-widget_arrow{
+                    color: $black;
+                }
+            }
+            
+        }
+
+    }
+
+    .products-slider{
+        margin-left: 2%;
+        
+        width: 74%;
+        
+
+        .product-slider_main{
+            height: 410px;
+
+            .owl-carouselMainSlider{
+                display: block;
+                max-width: 100%;
+
+            }
+            .owl-dots{
+                position: absolute;
+                left: 38px;
+                bottom: 22px;
+
+                .owl-dot{
+
+                    span {
+                        width: 10px;
+                        height: 10px;
+                        margin: 5px 7px;
+                        background: none;
+                        border: 2px solid $white;
+                        display: block;
+                        
+                        border-radius: 30px;
+
+                        &:hover{
+                            border-color: $blue;
+                        }
+                    }
+
+                } 
+                
+            }
+
+
+            .owl-carousel-item{
+                width: 100%;
+                height: 410px;
+                position: relative;
+                background: radial-gradient(circle, rgba(5,139,196,1) 0%, rgba(62,196,243,1) 0%, rgba(5,139,196,1) 100%);
+                display: block;
+                box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+                border-radius: 5px;
+
+                .carousel-text{
+                    position: absolute;
+                    left: 40px;
+                    top: 60px;
+                    width: 400px;
+
+
+                    p.carousel-title{
+                        font-size: 40px;
+                        font-weight: bold;
+                        line-height: 46px;
+                    
+
+                        text-transform: uppercase;
+                        color: $white;
+
+                    }
+                    p.carousel-desc{
+                        font-size: 22px;
+                        color: $blueText;
+                        padding-top: 30px;
+
+                    }
+                    p.carousel-price{
+                        font-size: 30px;
+                        color: $white;
+                        padding-top: 20px;
+                    }
+
+                }
+                .carousel-button{
+                    position: absolute;
+                    bottom: 80px;
+                    left: 40px;
+                    a{
+                       padding: 15px 50px;
+                       border-radius: 3px;
+                       background-color: $black;
+                       color: $white; 
+                       text-transform: uppercase;
+                       text-decoration: none;
+                       letter-spacing: 3px;
+                       font-weight: bold;
+
+                    }
+
+                }
+                .carousel-img{
+                    position: absolute;
+                    right: 0;
+                    top: -10px;
+                    img{
+                        display: block;
+                        z-index: 99;
+
+                    }
+                    
+                }
+            }
+
+
+        }
+
+        .product-advertising{
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+
+
+            .product-advertising_item{
+                position: relative;
+                width: 263px;
+                height: 173px;
+                background: $blueButton;
+                border-radius: 5px;
+                box-shadow: 0px 10px 12px -4px rgba(0,0,0,0.75);
+
+
+                .product-advertising_title{
+                    text-transform: uppercase;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: $white;
+                    position: absolute;
+                    left: 20px;
+                    top:20px;
+                }
+
+
+                .product-advertising_desc{
+                    position: absolute;
+                    bottom: 70px;
+                    left: 20px;
+                    color: $blueText;
+                    font-size: 16px;
+                }
+
+
+
+                .product-advertising_button{
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+
+                    a{
+                        display: inline-block;
+                        position: relative;
+                        color: $white;
+                        background: $black;
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        font-size: 15px;
+                        transition-property: color;
+                        transition-duration: 0.5ms;
+
+                    span{
+                        position: absolute;
+                        left: 50%;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+
+                    &:hover{
+                        color: $black;
+                        background: $white;
+                    }
+
+                    }
+                    
+                }
+
+
+
+
+                .product-advertising_image{
+                    position: absolute;
+                    right: -10px;
+                    bottom: -10px;
+
+                    img.product-advertising_image_fisher{
+                        padding: 0 10px 4px 0;
+
+                    }
+                    
+                }
+
+            }
+
+        }
+    }
+}

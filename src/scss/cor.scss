@@ -141,3 +141,35 @@ a.add_to_cart_button{
     
 
 }
+
+
+// Блок новостей
+p.news-item_date{
+    display: inline-block;
+    font-size: 14px;
+    letter-spacing: .1rem;
+    color: $white;
+    text-transform: uppercase;
+    padding: 12px 15px;
+    background: $black;
+    border-radius: 3px;
+    z-index: 10;
+
+}
+
+p.news-item_title{
+    font-size: 16px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+p.news-item_desc{
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 20px;
+
+}
+
