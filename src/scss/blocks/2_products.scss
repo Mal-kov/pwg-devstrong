@@ -65,39 +65,31 @@
         .product-slider_main{
             height: 410px;
 
-            .owl-carouselMainSlider{
-                display: block;
-                max-width: 100%;
-
+            .carousel-inner{
+                margin-top: -16px;
+                padding-left: 10px;
+                padding-right: 10px;
             }
-            .owl-dots{
-                position: absolute;
-                left: 38px;
-                bottom: 22px;
 
-                .owl-dot{
+            .carousel-indicators{
+                right: auto;
+                bottom: 40px;
+                margin-right: 6%;
+                margin-left: 6%;
 
-                    span {
-                        width: 10px;
-                        height: 10px;
-                        margin: 5px 7px;
-                        background: none;
-                        border: 2px solid $white;
-                        display: block;
-                        
-                        border-radius: 30px;
-
-                        &:hover{
-                            border-color: $blue;
-                        }
-                    }
-
-                } 
-                
+                li{
+                    width: 10px;
+                    height: 10px;
+                    margin-right: 12px;
+                    border-radius: 50%;
+                    border: 2px solid #4cd2fe;
+                    background: transparent;
+                }
             }
 
 
-            .owl-carousel-item{
+
+            .my-carousel-item{
                 width: 100%;
                 height: 410px;
                 position: relative;
@@ -150,8 +142,13 @@
                        letter-spacing: 3px;
                        font-weight: bold;
 
-                    }
+                       &:hover{
+                        background-color: $white;
+                        color: $black;
 
+                       }
+
+                    }
                 }
                 .carousel-img{
                     position: absolute;
@@ -170,7 +167,7 @@
         }
 
         .product-advertising{
-            margin-top: 30px;
+            margin-top: 60px;
             display: flex;
             justify-content: space-between;
 

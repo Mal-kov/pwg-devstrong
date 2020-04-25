@@ -16,10 +16,10 @@ module.exports = {
         './src/scss/index.scss'
     ],
     output: {
-        filename: 'bundle.js',
+        filename: 'js/bundle.js',
         
         // path: __dirname + '/dist'
-        path: path.resolve(__dirname, 'dist/js')
+        path: path.resolve(__dirname, 'dist')
     },
     optimization: {
         minimizer: [
@@ -87,7 +87,11 @@ module.exports = {
                 test: /\.(ttf|eot|woff|woff2|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 //include: path.resolve(__dirname, 'src/scss/fonts/'),
                 use: [{
-                    loader: 'file-loader'
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'fonts'
+                    } 
                 }]
             }
         ]
